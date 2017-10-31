@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+
+  <style>
+    html,
+    pre {
+      font-family: 'Menlo', monospace;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 30px;
+      font-size: 1rem;
+      border: 1px solid gray;
+    }
+
+    section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .preview,
+    label {
+      flex: 1;
+    }
+
+    input {
+      flex: 2;
+    }
+
+    .preview {
+      display: inline-block;
+      border: 1px solid gray;
+      height: 30px;
+    }
+  </style>
+
+</head>
+
+<body class="background">
+  <main>
+    <h2>Change color</h2>
+
+    <section>
+      <label>Background</label>
+      <input type="text" value="#2d2d2d" id="background">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Foreground</label>
+      <input type="text" value="#cdcdcd" id="foreground">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Keyword</label>
+      <input type="text" value="#ffeea6" id="keyword">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Number</label>
+      <input type="text" value="#ED9963" id="number">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Variable</label>
+      <input type="text" value="#F78D8C" id="variable">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Object</label>
+      <input type="text" value="#78AAD6" id="object">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>Function</label>
+      <input type="text" value="#76D4D6" id="function">
+      <div class="preview"></div>
+    </section>
+
+    <section>
+      <label>String</label>
+      <input type="text" value="#A8D3A9" id="string">
+      <div class="preview"></div>
+    </section>
+
+    <h2>Example</h2>
+
+    <pre><span class="variable">preview</span>.<span class="function">forEach</span>(<span class="variable">view</span> => {
+  <span class="keyword">const</span> <span class="variable">input</span> = <span class="variable">view</span>.previousElementSibling;
+  <span class="keyword">const</span> <span class="variable">value</span> = <span class="variable">input</span>.value;
+  <span class="keyword">const</span> <span class="variable">id</span> = <span class="variable">input</span>.id;
+  <span class="keyword">const</span> <span class="variable">spanClass</span> = <span class="object">document</span>.<span class="function">querySelectorAll</span>(<span class="string">`.${id}`</span>);
+
+  <span class="variable">view</span>.style.paddingLeft = <span class="number">20</span>;
+  
+  <span class="variable">spanClass</span>.<span class="function">forEach</span>(<span class="variable">span</span> => {
+    <span class="variable">span</span>.style.color = <span class="variable">input</span>.value;
+  });
+});</pre>
+  </main>
+  <script src="colors.js"></script>
+</body>
+
+</html>

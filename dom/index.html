@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document Object Model</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Accessing HTML Elements</h1>
+    <p>id, class, tag, query, query all</p>
+  </header>
+
+  <h2>getElementById('demo')</h2>
+  <section>
+    <div id="demo">#demo</div>
+  </section>
+
+  <h2>getElementsByClassName('demo')</h2>
+  <section>
+    <div class="demo">.demo</div>
+    <div class="demo">.demo</div>
+    <div class="demo">.demo</div>
+  </section>
+
+  <h2>getElementsByTagName('article')</h2>
+  <section>
+    <article>article</article>
+    <article>article</article>
+    <article>article</article>
+  </section>
+
+  <h2>querySelector('.query')</h2>
+  <section>
+    <div class="query">.query</div>
+    <div class="query">.query</div>
+  </section>
+
+  <h2>querySelectorAll('[role=demo]')</h2>
+  <section>
+    <div role="demo">[role=demo]</div>
+    <div role="demo">[role=demo]</div>
+    <div role="demo">[role=demo]</div>
+  </section>
+
+  <header>
+    <h1>Creating Nodes</h1>
+    <p>create element, create text node</p>
+  </header>
+
+  <h2>createElement('button')</h2>
+  <div id="createButton">Create Button</div>
+  <span id="buttonGoesHere"></span>
+
+  <h2>createTextNode('hello')</h2>
+  <div id="createTextNode">Create Text Node</div>
+  <span id="textNodeGoesHere"></span>
+
+  <header>
+    <h1>Modifying Elements</h1>
+    <p>innerHTML, attribute, style</p>
+  </header>
+
+  <h2>innerHTML</h2>
+  <div id="changeInnerHTML">Change inner HTML</div>
+
+  <h2>setAttribute('src', 'url')</h2>
+  <img id="changeAttribute" src="https://via.placeholder.com/150/E37933/ffffff">
+
+  <h2>style.backgroundColor</h2>
+  <div id="changeStyle">Change style</div>
+
+  <header>
+    <h1>Modifying nodes</h1>
+    <p>append, remove, replace, insert before</p>
+  </header>
+
+  <h2>appendChild('li')</h2>
+  <div id="appendListItem">Append List Item</div>
+  <ul id="ulAppend"></ul>
+
+  <h2>removeChild('li')</h2>
+  <div id="removeListItem">Remove List Item</div>
+  <ul id="ulRemove"></ul>
+
+  <h2>replaceChild('li')</h2>
+  <div id="replaceListItem">Replace List Item</div>
+  <ul id="ulReplace"></ul>
+
+  <header>
+    <h1>Traversing the DOM</h1>
+    <p>first child, last child, previous sibling, next sibling, childNodes</p>
+  </header>
+
+  <p>Click on the green element to see the related elements.</p>
+
+  <div></div><div class="outer" id="traversing"></div><div></div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
