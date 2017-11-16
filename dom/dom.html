@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Learning the DOM</title>
-  </head>
+<head>
+  <title>Learning the DOM</title>
+</head>
 
-  <body>
-    <h1>Document Object Model</h1> 
-  </body>
+<body>
+  <h1>Document Object Model</h1>
+  <button id="changeBackground">Change Background Color</button>
 
-</html> 
+<script>
+  let button = document.getElementById('changeBackground');
+  
+  button.addEventListener('click', () => {
+    document.body.style.backgroundColor = 'fuchsia';
+  });
+</script>
+</body>
+
+</html>
