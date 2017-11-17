@@ -1,0 +1,109 @@
+html {
+  font: normal normal normal 1rem/1.6 'Nunito', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #2d2d2d;
+  height: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Paytone One'; }
+
+a {
+  color: #33C7EF;
+  font-weight: 700;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 0 auto; }
+
+.hero-container {
+  padding: 60px 0;
+  max-width: 550px; }
+  .hero-container h1 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 3.5rem; }
+  .hero-container p {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem; }
+  .hero-container .subtitle {
+    font-weight: 700;
+    font-size: 2rem; }
+
+.site-footer {
+  background: #2D2D2D; }
+
+a.button,
+a.button-secondary {
+  -webkit-appearance: none;
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-image: -webkit-gradient(linear, left top, right top, from(#33C7EF), color-stop(51%, #37F093), to(#33C7EF));
+  background-image: linear-gradient(to right, #33C7EF 0%, #37F093 51%, #33C7EF 100%);
+  background-size: 300% auto;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.25rem 1.75rem;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05); }
+  a.button:hover,
+  a.button-secondary:hover {
+    text-decoration: none;
+    background-position: right center; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+  font-size: 1.1rem; }
+
+.brand a {
+  font-weight: 400;
+  color: #2d2d2d;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(0, #c1eefa));
+  background: linear-gradient(180deg, transparent 55%, #c1eefa 0);
+  text-decoration: none; }
+  .brand a:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(0, #c5fbe0));
+    background: linear-gradient(180deg, transparent 55%, #c5fbe0 0); }
+
+.site-navigation {
+  height: 80px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #efefef;
+  font-family: 'Nunito'; }
+  .site-navigation .menu a {
+    color: #888;
+    font-weight: 400;
+    margin: 0 2px;
+    padding: 1rem; }
+    .site-navigation .menu a:hover {
+      text-decoration: none;
+      color: #111; }
