@@ -7,6 +7,10 @@ html {
 body {
   margin: 0; }
 
+img {
+  height: auto;
+  max-width: 100%; }
+
 h1,
 h2,
 h3,
@@ -26,30 +30,73 @@ a {
     text-decoration: underline; }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   padding: 0 1rem;
   margin: 0 auto; }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ac {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.sb {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.code {
+  margin: auto; }
+
+pre {
+  background: #0D0D0D;
+  color: #d5d5d5;
+  font-family: Menlo, Roboto Mono, Courier New, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.6;
+  font-weight: 400;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  border-radius: 0;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  border-top: 20px solid #d0d0d0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.15); }
+
+code {
+  font-family: Menlo, Roboto Mono, Courier New, monospace; }
+
 .hero-container {
-  padding: 60px 0;
-  max-width: 550px; }
+  padding: 80px 0;
+  max-width: 550px;
+  margin-right: 50px; }
   .hero-container h1 {
     margin-bottom: 0;
     font-weight: 700;
-    font-size: 3.5rem; }
+    font-size: 3rem; }
   .hero-container p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #666;
     margin-bottom: 3rem; }
   .hero-container .subtitle {
     font-weight: 700;
     font-size: 2rem; }
 
-.site-footer {
-  background: #2D2D2D; }
-
 a.button,
 a.button-secondary {
+  display: inline-block;
   -webkit-appearance: none;
   -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
@@ -79,7 +126,7 @@ a.button-secondary {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
   height: 80px;
   font-size: 1.1rem; }
@@ -87,8 +134,6 @@ a.button-secondary {
 .brand a {
   font-weight: 400;
   color: #2d2d2d;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(0, #c1eefa));
-  background: linear-gradient(180deg, transparent 55%, #c1eefa 0);
   text-decoration: none; }
   .brand a:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(0, #c5fbe0));
@@ -107,3 +152,46 @@ a.button-secondary {
     .site-navigation .menu a:hover {
       text-decoration: none;
       color: #111; }
+
+.site-footer {
+  padding: 80px 0;
+  background: #0D0D0D url("../nobuo2.png") no-repeat right top/contain;
+  color: #dedede; }
+  .site-footer h1,
+  .site-footer h2 {
+    font-family: 'Nunito';
+    color: #dedede;
+    font-size: 1.8rem; }
+  .site-footer h1 {
+    display: inline-block; }
+  .site-footer h2 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, transparent), color-stop(0, #37F093));
+    background: linear-gradient(180deg, transparent 85%, #37F093 0); }
+  .site-footer .sub {
+    color: #33C7EF;
+    font-weight: 700;
+    font-size: 1.2rem; }
+
+.about {
+  max-width: 500px; }
+
+.boolean {
+  color: #33c7ef; }
+
+.string {
+  color: #66f4ad; }
+
+.social-icons {
+  margin-top: 2rem; }
+  .social-icons a {
+    color: white;
+    margin: 0 5px; }
+    .social-icons a:hover {
+      text-decoration: none;
+      color: #62d4f3; }
+
+.primary {
+  color: #33C7EF; }
+
+.secondary {
+  color: #37F093; }
