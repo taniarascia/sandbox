@@ -101,12 +101,6 @@ code {
   .hero-container p {
     font-size: 1.1rem;
     color: #666; }
-  .hero-container a {
-    -webkit-transition: all 100ms ease;
-    transition: all 100ms ease;
-    color: #0d0d0d; }
-    .hero-container a:hover {
-      text-decoration: none; }
   .hero-container .lead {
     font-size: 1.3rem; }
   .hero-container .subtitle {
