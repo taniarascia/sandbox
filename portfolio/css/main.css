@@ -5,15 +5,20 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 1.1rem; }
 
 img {
   height: auto;
   max-width: 100%; }
 
-p {
+p,
+ul {
   margin-top: 0;
   margin-bottom: 2rem; }
+
+li {
+  margin-bottom: .5rem; }
 
 h1 {
   font-size: 3rem;
@@ -183,6 +188,13 @@ a.button-secondary {
     font-weight: 700;
     font-size: 1.2rem; }
 
+.footer-bottom {
+  padding: 20px 0;
+  background: #212121;
+  color: #cdcdcd; }
+  .footer-bottom p {
+    margin-bottom: 0; }
+
 .about {
   max-width: 500px; }
 
@@ -198,7 +210,10 @@ a.button-secondary {
     color: white;
     margin: 0 5px; }
     .social-icons a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #37F093; }
+    .social-icons a:nth-of-type(even):hover {
+      color: #33C7EF; }
 
 .primary {
   color: #33C7EF; }
@@ -273,17 +288,28 @@ a.button-secondary {
   .underline a:hover {
     background-size: 100% 6px; }
 
-.underline-bg a {
-  -webkit-transition: all 0s linear;
-  transition: all 0s linear;
+.underline-nh {
+  padding: 0 10px 0 0;
+  display: inline-block;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   background: -webkit-gradient(linear, left top, right top, from(#33C7EF), color-stop(98%, #37F093));
   background: linear-gradient(to right, #33C7EF 0%, #37F093 98%);
-  background-size: 100% 3px;
+  background-size: 100% 6px;
   background-repeat: no-repeat;
-  background-position: left 100%; }
-  .underline-bg a:hover {
-    background-size: 100% auto;
-    color: white; }
+  background-position: left 95%; }
+
+.gradient-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#33C7EF), color-stop(98%, #37F093));
+  background: linear-gradient(to right, #33C7EF 0%, #37F093 98%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left 95%; }
+
+.f1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .section-bg {
   padding: 80px 0;
@@ -297,6 +323,54 @@ a.button-secondary {
 
 .mb {
   margin-bottom: 2.5rem; }
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.section-header {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .section-header p {
+    font-size: 1.3rem;
+    color: #666; }
+
+.resume {
+  margin: 5rem 0 0; }
+  .resume h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .25rem; }
+  .resume .subtitle {
+    font-size: 1.1rem;
+    color: #666666; }
+  .resume .flex {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2rem;
+    padding: 2rem 0; }
+    .resume .flex:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0; }
+  .resume p {
+    margin-bottom: 1.5rem; }
+  .resume p,
+  .resume li {
+    color: #666; }
+  .resume h3 {
+    font-weight: 700; }
+
+.resume-title {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.resume-description {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
 
 .card {
   -webkit-transition: all 500ms ease;
@@ -316,11 +390,12 @@ a.button-secondary {
     box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.1); }
   .card img {
     display: block;
-    max-width: 75px;
+    max-width: 50px;
     margin: 0 auto; }
   .card h2 {
     font-weight: 700;
-    margin: 2rem 0;
+    font-size: 1.2rem;
+    margin: 2rem 0 0;
     text-align: center; }
   .card p {
     color: #666;
