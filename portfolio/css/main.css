@@ -11,6 +11,14 @@ img {
   height: auto;
   max-width: 100%; }
 
+p {
+  margin-top: 0;
+  margin-bottom: 2rem; }
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Paytone One'; }
+
 h1,
 h2,
 h3,
@@ -18,9 +26,8 @@ h4,
 h5 {
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  font-family: 'Paytone One'; }
+  margin-bottom: 1.5rem;
+  font-weight: 400; }
 
 a {
   color: #33C7EF;
@@ -30,7 +37,7 @@ a {
     text-decoration: underline; }
 
 .container {
-  max-width: 960px;
+  max-width: 1040px;
   padding: 0 1rem;
   margin: 0 auto; }
 
@@ -80,16 +87,23 @@ code {
 
 .hero-container {
   padding: 80px 0;
-  max-width: 550px;
+  max-width: 450px;
   margin-right: 50px; }
   .hero-container h1 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     font-weight: 700;
     font-size: 3rem; }
   .hero-container p {
-    font-size: 1.3rem;
-    color: #666;
-    margin-bottom: 3rem; }
+    font-size: 1.1rem;
+    color: #666; }
+  .hero-container a {
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+    color: #0d0d0d; }
+    .hero-container a:hover {
+      text-decoration: none; }
+  .hero-container .lead {
+    font-size: 1.3rem; }
   .hero-container .subtitle {
     font-weight: 700;
     font-size: 2rem; }
@@ -126,7 +140,7 @@ a.button-secondary {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   height: 80px;
   font-size: 1.1rem; }
@@ -135,9 +149,6 @@ a.button-secondary {
   font-weight: 400;
   color: #2d2d2d;
   text-decoration: none; }
-  .brand a:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(0, #c5fbe0));
-    background: linear-gradient(180deg, transparent 55%, #c5fbe0 0); }
 
 .site-navigation {
   height: 80px;
@@ -155,7 +166,7 @@ a.button-secondary {
 
 .site-footer {
   padding: 80px 0;
-  background: #0D0D0D url("../nobuo2.png") no-repeat right top/contain;
+  background: #0D0D0D;
   color: #dedede; }
   .site-footer h1,
   .site-footer h2 {
@@ -187,11 +198,130 @@ a.button-secondary {
     color: white;
     margin: 0 5px; }
     .social-icons a:hover {
-      text-decoration: none;
-      color: #62d4f3; }
+      text-decoration: none; }
 
 .primary {
   color: #33C7EF; }
 
 .secondary {
   color: #37F093; }
+
+@-webkit-keyframes backgroundGradient {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+@-webkit-keyframes loadBounce {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes loadBounce {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.brand {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: loadBounce 500ms ease-in-out forwards;
+  animation: loadBounce 500ms ease-in-out forwards; }
+
+.underline a {
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  background: -webkit-gradient(linear, left top, right top, from(#33C7EF), color-stop(98%, #37F093));
+  background: linear-gradient(to right, #33C7EF 0%, #37F093 98%);
+  background-size: 0px 6px;
+  background-repeat: no-repeat;
+  background-position: left 95%; }
+  .underline a:hover {
+    background-size: 100% 6px; }
+
+.underline-bg a {
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  background: -webkit-gradient(linear, left top, right top, from(#33C7EF), color-stop(98%, #37F093));
+  background: linear-gradient(to right, #33C7EF 0%, #37F093 98%);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: left 100%; }
+  .underline-bg a:hover {
+    background-size: 100% auto;
+    color: white; }
+
+.section-bg {
+  padding: 80px 0;
+  background: #f7f7f7; }
+
+.section {
+  padding: 80px 0; }
+
+.text-center {
+  text-align: center; }
+
+.mb {
+  margin-bottom: 2.5rem; }
+
+.card {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 2.5rem;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.05);
+  margin: .5rem; }
+  .card:hover {
+    -webkit-box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.1); }
+  .card img {
+    display: block;
+    max-width: 75px;
+    margin: 0 auto; }
+  .card h2 {
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: center; }
+  .card p {
+    color: #666;
+    margin-bottom: 0; }
