@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 img {
   height: auto;
@@ -21,8 +21,8 @@ li {
   margin-bottom: .5rem; }
 
 h1 {
-  font-size: 3rem;
-  font-family: 'Paytone One'; }
+  font-size: 2.5rem;
+  font-family: "Paytone One"; }
 
 h1,
 h2,
@@ -32,7 +32,8 @@ h5 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: -.03rem; }
 
 a {
   color: #33C7EF;
@@ -110,19 +111,19 @@ pre code {
   padding: 80px 0;
   max-width: 450px; }
   .hero-container h1 {
-    margin-bottom: 1rem;
-    font-weight: 700;
-    font-size: 3rem; }
+    margin-bottom: 1rem; }
   .hero-container p {
     font-size: 1.1rem;
     color: #666; }
   .hero-container .lead {
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
   .hero-container .subtitle {
     font-weight: 700;
     font-size: 2rem; }
 
-a.button, [type=button], [type=submit] {
+a.button,
+[type=button],
+[type=submit] {
   display: inline-block;
   -webkit-appearance: none;
   -webkit-transition: background 500ms ease;
@@ -137,10 +138,13 @@ a.button, [type=button], [type=submit] {
   vertical-align: middle;
   padding: 1rem 1.75rem;
   font-size: 1.1rem;
+  font-weight: 700;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05);
   cursor: pointer; }
-  a.button:hover, [type=button]:hover, [type=submit]:hover {
+  a.button:hover,
+  [type=button]:hover,
+  [type=submit]:hover {
     text-decoration: none;
     background-position: right center; }
 
@@ -322,7 +326,7 @@ a.button, [type=button], [type=submit] {
 
 .section-bg {
   padding: 80px 0;
-  background: #f7f7f7; }
+  background: #F1F3F5; }
 
 .section {
   padding: 80px 0; }
@@ -344,7 +348,7 @@ a.button, [type=button], [type=submit] {
   margin-left: auto;
   margin-right: auto; }
   .section-header p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #666; }
 
 .resume {
@@ -391,12 +395,12 @@ a.button, [type=button], [type=submit] {
   background: #fff;
   border: 1px solid #efefef;
   border-radius: 6px;
-  -webkit-box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
+  box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
   margin: .5rem; }
   .card:hover {
-    -webkit-box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.1); }
+    -webkit-box-shadow: 0 6px 15px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.4);
+    box-shadow: 0 6px 15px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.4); }
   .card img {
     display: block;
     margin: 0 auto; }
@@ -417,15 +421,21 @@ a.button, [type=button], [type=submit] {
   margin: 0 auto;
   padding: 0 1rem; }
 
-[type=text], [type=email], textarea {
+[type=text],
+[type=email],
+textarea {
   width: 100%;
   display: block;
   border: 1px solid #dedede;
   border-radius: 6px;
   padding: 1rem;
   font-size: 1.1rem;
-  margin-bottom: 1rem; }
-  [type=text]:focus, [type=email]:focus, textarea:focus {
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 3px 6px rgba(102, 119, 136, 0.03), 0 1px 1px rgba(102, 119, 136, 0.4);
+  box-shadow: 0 3px 6px rgba(102, 119, 136, 0.03), 0 1px 1px rgba(102, 119, 136, 0.4); }
+  [type=text]:focus,
+  [type=email]:focus,
+  textarea:focus {
     outline: 0;
     border: 1px solid #33C7EF;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #92e1f6;
