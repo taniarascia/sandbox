@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Learning About Nodes</title>
-  </head>
+<head>
+  <title>Learning About Nodes</title>
 
-  <body>
-    <h1>An element node</h1>
-    <!-- a comment node -->
-    A text node.
-  </body>
-  
+  <style>
+    * { border: 2px solid #dedede; padding: 15px; margin: 15px; }
+    html { margin: 0; padding: 0; }
+    body { max-width: 600px; font-family: sans-serif; color: #333; }
+  </style>
+</head>
+
+<body>
+  <h1>Shark World</h1>
+  <p>The world's leading source on <strong>shark</strong> related information.</p>
+  <h2>Types of Sharks</h2>
+  <ul>
+    <li>Hammerhead</li>
+    <li>Tiger</li>
+    <li>Great White</li>
+  </ul>
+</body> 
+
+<script>
+  const h1 = document.getElementsByTagName('h1')[0];
+  const p = document.getElementsByTagName('p')[0];
+  const ul = document.getElementsByTagName('ul')[0];
+
+  for (let element of p.childNodes) {
+    console.log(element); 
+  }
+</script>
+
 </html>
