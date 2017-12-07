@@ -3,91 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Ghibli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box
-    }
+  <title>Ghibli App</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
-    html {
-      -webkit-font-smoothing: antialiased;
-      font-family: sans-serif;
-      color: white;
-      background: #1DAEEC;
-      line-height: 1.4;
-    }
-
-    #root {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    card {
-      flex: 1 1 calc(33% - 1rem);
-      margin: .5rem;
-      padding: 2.5rem;
-      border: 1px solid white;
-    }
-
-    card:hover {
-      background: #1a9cd4;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: black;
-    }
-
-    p {
-      color: white;
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 
 <body>
 
   <div id="root"></div>
 
-  <script>
-    const root = document.getElementById('root');
-    const container = document.createElement('container');
-    root.appendChild(container);
-
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
-    request.onload = function () {
-
-      // begin accessing JSON data here
-      var data = JSON.parse(this.response);
-      if (request.status >= 200 && request.status < 400) {
-        data.forEach(movie => {
-          const card = document.createElement('card');
-          const h1 = document.createElement('h1');
-          const p = document.createElement('p');
-
-          h1.textContent = movie.title;
-          p.textContent = movie.description;
-
-          container.appendChild(card);
-          card.appendChild(h1);
-          card.appendChild(p);
-        })
-      } else {
-        const m = document.createElement('marquee');
-        m.textContent = 'Nope. That didn\'t work.';
-        root.appendChild(m);
-      }
-    }
-    request.send();
-  </script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
