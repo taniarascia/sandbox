@@ -31,4 +31,5 @@ button.addEventListener('click', function () {
   while (ul.firstChild) {
     ul.removeChild(ul.firstChild);
   }
+  itemsArray = [];
 });
