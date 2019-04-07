@@ -1,5 +1,6 @@
-# Studio Ghibli App
+*** Author: Jacob Yager ***
 
-- [View the tutorial](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript)
+*** This is a project to learn more about using APIs and grain access to neat D&D info quickly ***
 
-- [View the demo](https://taniarascia.github.io/sandbox/ghibli/)
+*** Build off of this source material: ***
+*** https://github.com/taniarascia/sandbox *** 
